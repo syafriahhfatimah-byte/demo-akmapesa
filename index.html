@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>HIMASI - Himpunan Mahasiswa Sistem Informasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="articles.js"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-black/10 backdrop-blur border-b border-white/10 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-teal-400 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-camera-retro text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">HIMASI</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="hover:text-green-400 transition-all duration-300 hover:scale-105">Beranda</a>
+                    <a href="#program" class="hover:text-green-400 transition-all duration-300 hover:scale-105">Program Kerja</a>
+                    <a href="#artikel" class="hover:text-green-400 transition-all duration-300 hover:scale-105">Artikel</a>
+                    <a href="#kontak" class="hover:text-green-400 transition-all duration-300 hover:scale-105">Kontak</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button class="text-white hover:text-purple-400 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section id="beranda" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-40 left-1/2 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="mb-8">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight">
+                    HIMASI
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-2 font-light">Himpunan Mahasiswa Sistem Informasi</p>
+                <p class="text-lg text-purple-300 mb-8">Universitas Teknologi Digital Indonesia</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+                    Organisasi mahasiswa yang berkomitmen untuk mengembangkan potensi mahasiswa 
+                    Sistem Informasi melalui kegiatan akademik, soft skill, dan pengabdian masyarakat.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a onclick="alert('Selamat Datang')" href="#program" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-4 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Jelajahi Program
+                    </a>
+                    <a href="#artikel" class="border-2 border-purple-400 hover:bg-purple-400 px-8 py-4 rounded-full text-purple-400 hover:text-white font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center">
+                        <i class="fas fa-book mr-2"></i>
+                        Baca Artikel
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div class="text-3xl font-bold text-purple-400 mb-2">500+</div>
+                    <div class="text-gray-300">Anggota Aktif</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div class="text-3xl font-bold text-pink-400 mb-2">50+</div>
+                    <div class="text-gray-300">Program Kerja</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div class="text-3xl font-bold text-indigo-400 mb-2">5</div>
+                    <div class="text-gray-300">Tahun Berprestasi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Kerja -->
+    <section id="program" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Program Kerja
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Berbagai program inovatif untuk mengembangkan potensi mahasiswa Sistem Informasi
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white group-hover:text-purple-300 transition-colors">Workshop Programming</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Pelatihan intensif programming dengan berbagai bahasa pemrograman modern 
+                        untuk meningkatkan skill teknis mahasiswa.
+                    </p>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors">Leadership Training</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Program pengembangan kepemimpinan untuk membentuk karakter pemimpin 
+                        masa depan di bidang teknologi informasi.
+                    </p>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white group-hover:text-green-300 transition-colors">Pengabdian Masyarakat</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Kegiatan sosial untuk memberikan kontribusi nyata kepada masyarakat 
+                        melalui penerapan teknologi informasi.
+                    </p>
+                </div>
+                
+                <!-- Program 4 -->
+                <div class="group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white group-hover:text-orange-300 transition-colors">Kompetisi IT</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Menyelenggarakan dan mengikuti berbagai kompetisi IT untuk mengasah 
+                        kemampuan dan meraih prestasi.
+                    </p>
+                </div>
+                
+                <!-- Program 5 -->
+                <div class="group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white group-hover:text-purple-300 transition-colors">Seminar Teknologi</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Menghadirkan para ahli untuk berbagi pengetahuan tentang perkembangan 
+                        terkini dalam dunia teknologi informasi.
+                    </p>
+                </div>
+                
+                <!-- Program 6 -->
+                <div class="group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white group-hover:text-pink-300 transition-colors">Networking Event</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Membangun jaringan profesional dengan alumni dan praktisi industri 
+                        untuk membuka peluang karir di masa depan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artikel -->
+    <section id="artikel" class="py-20 bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Artikel Terbaru
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Baca artikel menarik seputar teknologi, tips karir, dan pengalaman mahasiswa
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 article-list">
+                
+            </div>
+            
+            <div class="text-center mt-12">
+                <a id="loadMoreButton" href="#" class="inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-4 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-newspaper mr-2"></i>
+                    Lihat Semua Artikel
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-black/40 border-t border-white/10 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Logo & Deskripsi -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">HIMASI</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed max-w-md mb-6">
+                        Himpunan Mahasiswa Sistem Informasi yang berkomitmen mengembangkan 
+                        potensi mahasiswa melalui berbagai program inovatif dan berkelanjutan.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-purple-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-blue-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-linkedin text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-whatsapp text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#beranda" class="text-gray-300 hover:text-purple-400 transition-colors">Beranda</a></li>
+                        <li><a href="#program" class="text-gray-300 hover:text-purple-400 transition-colors">Program Kerja</a></li>
+                        <li><a href="#artikel" class="text-gray-300 hover:text-purple-400 transition-colors">Artikel</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-purple-400 transition-colors">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kontak -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-white">Kontak</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-purple-400 mt-1"></i>
+                            <span class="text-gray-300">
+                                Gedung Informatika Lt.3<br>
+                                Universitas Teknologi Digital Indonesia
+                            </span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-purple-400"></i>
+                            <span class="text-gray-300">himasi@utdi.ac.id</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-purple-400"></i>
+                            <span class="text-gray-300">+62 812-3456-7890</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-white/10 pt-8">
+                <div class="text-center text-gray-400">
+                    <p>&copy; 2024 HIMASI - Himpunan Mahasiswa Sistem Informasi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
